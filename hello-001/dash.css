@@ -45,11 +45,11 @@ nav a {
 }
 
 nav a:first-of-type {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 nav a:last-of-type {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav a:nth-of-type(4),

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 50%;
+        border: 1px solid blue;
+        margin: 5px;
+      }
+      div:nth-of-type(1) {
+        background-color: #ddd;
+      }
+      div#div2 {
+        background-color: #aaa;
+      }
+      div#div3 {
+        border: 1px solid green;
+      }
+      .div4 {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>박스1</div>
+    <div id="div2">박스2</div>
+    <div id="div3">박스3</div>
+    <div class="div4">박스4</div>
+    <div class="div4">박스5</div>
+  </body>
+  <script>
+    /*
+    화면(document)에 있는 여러 요소(selector)들 중에
+    id가 div2인 (#div2) 요소를 JS에서 사용할 수 있도록
+    객체변수로 변환하기
+    const 는 java 에서 final과 같은 역할
+    */
+    const div2 = document.querySelector("#div2");
+    const div3 = document.querySelector("div#div3");
+    // const div4 = document.querySelector("div.div4"); //같은 이름을 가진 것중에서 맨처음 하나만 적용 된다.
+    const div4 = document.querySelectorAll("div.div4");
+    /*
+    자바스크립트의 화살표함수
+    const 변수명 = 함수 부분 (매개변수) => {};
+    style 설정시 카멜케이스적용
+    */
+    const onClickHandler1 = (e) => {
+      div2.innerHTML = "대한민국만세";
+    }; //자바스크립트의 화살표 함수
+    const onClickHandler2 = function (e) {
+      div3.style.backgroundColor = "yellow";
+      div3.style.color = "blue";
+      div3.style.fontSize = "30px";
+    }; // 2015년 이전
+    function onClickHandler3(e) {
+      div4[0].style.backgroundColor = "pink";
+      div4[1].style.backgroundColor = "green";
+    } // old버전
+
+    div2.addEventListener("click", onClickHandler1);
+    div3.addEventListener("click", onClickHandler2);
+    div4[0].addEventListener("click", onClickHandler3);
+    div4[1].addEventListener("click", onClickHandler3);
+  </script>
+</html>
