@@ -20,3 +20,11 @@ nav.main li:hover {
   border-bottom: 3px solid yellow;
   cursor: pointer;
 }
+/*
+반응형 css : 1000px이 넘어가면 
+*/
+@media (max-width: 1000px) {
+  nav.main ul {
+    flex-direction: column;
+  }
+}
