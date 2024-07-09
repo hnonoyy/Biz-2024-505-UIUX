@@ -8,25 +8,25 @@
 
 ## vsCode 플러그인 설치하기
 
-![alt text](image.png)
-![alt text](image-2.png)
+![alt text](./images/image.png)
+![alt text](./images/image-2.png)
 
 - 검색 창에 `korea` 입력 :`Korea Lan. Pack` 설치
-  ![alt text](image-1.png)
+  ![alt text](./images/image-1.png)
 
 - ctrl + shift + ` : 터미널 열기 -> 기본을 bash로 변경
 
 - 검색창에 `prettier` 입력 : `Prettier - Code formatter` 설치
-  ![alt text](image-3.png)
+  ![alt text](./images/image-3.png)
 
 - 검색창에 `EsLint` 입력 : `EsLint` 설치 (js 문법검사)
-  ![alt text](image-6.png)
+  ![alt text](./images/image-6.png)
 
 - 검색창에 `ICon` 입력 : `Material Icon Theme` 설치
-  ![alt text](image-7.png)
+  ![alt text](./images/image-7.png)
 
 - 검색창에 `live` 입력 : `Live Server` 설치
-  ![alt text](image-8.png)
+  ![alt text](./images/image-8.png)
 
 ## vsCode 세팅하기
 
@@ -36,7 +36,7 @@
 - Editor: Format On Save Mode : file로 되어있는지 확인
 
 - formatter 검색하여 Editor: Default Formatter 를 다운로드 받은 Prettier 로 설정
-  ![alt text](image-4.png)
+  ![alt text](./images/image-4.png)
 
 - save 검색하여 : Editor: Format On Save 를 체크하기
-  ![alt text](image-5.png)
+  ![alt text](./images/image-5.png)
