@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
       url = "./dog_detail_5.html";
     } else if (altText === "첫 만남") {
       url = "./dog_detail_6.html";
+    } else {
+      return;
     }
     importHTML(container, url);
   };
