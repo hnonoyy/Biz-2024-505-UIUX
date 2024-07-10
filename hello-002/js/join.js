@@ -21,12 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
       1. username, password, re_password 가 입력 되었는지 검사하기
       2. password 와 re_password 가 일치하는지 검사하기
      */
+
     if (!value_username) {
       alert("USERNAME이 입력되지않았습니다");
       input_username.select();
       return false;
     }
-    const userNameRexp = /^(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]|.*[0-9]).{3,16}$/;
+    const userNameRexp =
+      /^(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]|.*[0-9]).{3,16     }$/;
     if (!userNameRexp.text(value_username)) {
       alert("USER NAME 3~16자리 이내의 영문, 숫자 조합으로 입력하세요");
     }
